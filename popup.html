@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Araam</title>
+  <style>
+    body { width: 340px; padding: 15px; font-family: system-ui, -apple-system, sans-serif; margin: 0; }
+    h1 { font-size: 18px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px; }
+    .domain { font-size: 15px; font-weight: 600; color: #1a73e8; word-break: break-all; }
+    .status { padding: 8px 12px; border-radius: 6px; font-size: 14px; margin-bottom: 16px; }
+    .status.enabled { background: #e6f4ea; color: #137333; }
+    .status.disabled { background: #fef2f2; color: #c5221f; }
+    button { 
+      width: 100%; padding: 12px; margin-bottom: 12px; 
+      background: #1a73e8; color: white; border: none; 
+      border-radius: 8px; font-size: 15px; font-weight: 500; cursor: pointer; 
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    button:hover { background: #0d62d1; }
+    button.secondary { background: #f1f3f4; color: #3c4043; }
+    button.danger { background: #d93025; }
+    .site-list { max-height: 280px; overflow-y: auto; }
+    .site-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 8px 12px; margin-bottom: 6px; background: #f8f9fa;
+      border-radius: 6px; font-size: 14px;
+    }
+    .site-item button { width: auto; padding: 4px 10px; font-size: 13px; margin: 0; }
+    .empty { text-align: center; color: #666; font-size: 13px; padding: 20px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- <h1>🛡️ Araam</h1> -->
+   <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+     <img src="./icon48.svg" alt="Araam" width="24" height="24">
+     <h1 style="font-size:18px;margin:0;">Araam</h1>
+    </div>
+  
+  <div id="current-status" class="status disabled">
+    <!-- <strong id="current-domain">example.com</strong><br> -->
+    <span id="status-text">Protection is disabled on this site</span>
+  </div>
+
+  <button id="toggle-site-btn">
+    <span id="toggle-text">Enable on this site</span>
+  </button>
+
+  <button id="reload-btn" class="secondary">↻ Reload current tab</button>
+
+  <h2 style="font-size:15px;margin:20px 0 10px 0;">Protected websites</h2>
+  <div id="site-list" class="site-list"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

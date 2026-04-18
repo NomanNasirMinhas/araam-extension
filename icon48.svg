@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad48" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="10" fill="url(#grad48)" />
+  
+  <path d="M24 8 C24 8 10 11 8 13 C8 21 8 32 24 42 C40 32 40 21 40 13 C38 11 24 8 24 8 Z" fill="rgba(255, 255, 255, 0.2)" />
+  
+  <path d="M24 14 L14 34 H20 L22 28 H26 L28 34 H34 Z" fill="#ffffff" />
+  <path d="M24 20 L26 25 H22 Z" fill="#4F46E5" />
+</svg>
