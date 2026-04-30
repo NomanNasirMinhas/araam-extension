@@ -42,9 +42,24 @@
     <span id="status-text">Protection is disabled on this site</span>
   </div>
 
+  <div style="background: #f8f9fa; padding: 10px; border-radius: 6px; margin-bottom: 12px; font-size: 13px;">
+    <label style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px; cursor: pointer;">
+      <input type="checkbox" id="opt-block-popups">
+      <span>Block popups & new tabs globally</span>
+    </label>
+    <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+      <input type="checkbox" id="opt-block-redirects">
+      <span>Block cross-origin redirects globally</span>
+    </label>
+  </div>
+
   <button id="toggle-site-btn">
     <span id="toggle-text">Enable on this site</span>
   </button>
+  <label id="tld-checkbox-container" style="display: flex; justify-content: center; align-items: center; gap: 6px; font-size: 13px; margin-bottom: 12px; color: #666; cursor: pointer;">
+    <input type="checkbox" id="all-tlds-checkbox">
+    <span>Apply to all TLDs (e.g. .com, .org)</span>
+  </label>
 
   <button id="reload-btn" class="secondary">↻ Reload current tab</button>
 
